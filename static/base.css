@@ -1,0 +1,75 @@
+@font-face {
+    font-family: helvetica;
+    src: url(../static/helvetica/HelveticaCondensedRegular.ttf);
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+    color: white;
+    align-items: center;
+    background-image: url(../static/download.svg);
+}
+a{
+    font-family: helvetica;
+    color: white;
+    text-decoration: none;
+    float: left;
+    position: relative;
+    top: 30px;
+    left: 500px;
+    margin-left: 60px;
+    align-items: center;
+    
+}
+#Sheryians_coding_school{
+    position: relative;
+    left: 40px;
+    top: 25px;
+}
+
+#signin{
+    width: 90px;
+    height: 30px;
+    color: black;
+    font-family: "Helvetica";
+    position: relative;
+    top: 19px;
+    left: 500px;
+    text-align: center;
+    background-color: #24cfa6;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+#logo{
+    width: 22px;
+    position: relative;
+    top: 15px;
+    right: 850px;
+}
+.containe{
+    display: flex;
+    gap: 10px;
+}
+.boxe{
+    width: 250px;
+    height: 420px;
+    /* background-color: #24cfa6; */
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+}
+#boxe{
+    width: 400px;
+    display: block;
+
+}

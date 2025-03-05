@@ -1,0 +1,165 @@
+/* Centering the sign-in form */
+/* Ensure the whole page is centered */
+/* Centering the navigation bar */
+nav {
+    display: flex;
+    /* justify-content: center; Center horizontally */
+    align-items: center; /* Align items in center */
+    background: none; /* Adjust color if needed */
+    padding: 10px 0;
+    position: fixed; /* Keeps it fixed at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    left: 0;
+}
+
+/* Adjust the nav links */
+nav a {
+    font-family: helvetica;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Spacing between links */
+    font-size: 16px;
+}
+
+/* Fix logo alignment */
+#logo {
+    width: 30px; /* Adjust size */
+    margin-right: 75px; /* Space from text */
+}
+
+/* Fix sign-in button alignment */
+#signin {
+    background-color: #24cfa6;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: black;
+}
+
+/* Centering the sign-in form */
+.signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #1c1c1c;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 100, 0.5);
+    width: 350px;
+    max-width: 90%;
+}
+
+/* .signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    background: #1c1c1c;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 100, 0.5);
+    width: 350px;
+    margin: auto;
+} */
+
+/* Heading Style */
+.signin-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #00ff88;
+}
+
+/* Input Fields */
+.signin-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Placeholder Color */
+.signin-container input::placeholder {
+    color: #bbb;
+}
+
+/* Remember Me and Forgot Password */
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.remember-me a{
+    margin-right: 100px;
+}
+.remember-me label {
+    color: white;
+}
+
+.remember-me a {
+    color: #00ff88;
+    text-decoration: none;
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+
+.remember-me a:hover {
+    text-decoration: underline;
+}
+
+/* Sign In Button */
+.signin-container button {
+    width: 90%;
+    padding: 10px;
+    background-color: #00ff88;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.signin-container button:hover {
+    background-color: #00cc66;
+}
+
+/* Create an Account Link */
+.signin-container a {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #00ff88;
+    text-decoration: none;
+}
+
+.signin-container a:hover {
+    text-decoration: underline;
+}
+
+.signin-container a{
+    position: relative;
+    left: 110px;
+    bottom: 10px;
+}

@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Sheryians coding school
+{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock css %}
+
+
+{% block body %}
+    <br>
+    <div id="main_text">We only <span id="teach">teach</span><br> what we are really <br>really <span id="good">good</span> at.</div>
+    <br>
+    <div class="side_text">
+        <p>
+        Get ready to <span class="text-highlight">accelerate your career </span> with customized courses and leave
+        your mark in the tech industry
+      </p>
+    </div>
+
+    <button id="cheack_course">Check Course-Make an Impact</button>
+
+    <div id="main_division">
+        <div class="box">
+            <h2>25k+</h2>
+            <p>Students taught</p>
+        </div>
+        <div class="box">
+            <h2>20+</h2>
+            <p>Instructors</p>
+        </div>
+        <div class="box">
+            <h2>432K+</h2>
+            <p>Youtube Subs.</p>
+        </div>
+    </div>
+    <section id="view2">
+        <div class="top">
+            <span>
+                we do whatever it takes to help you
+                <br>
+                <span class="text-highlight">understand the concepts.</span>
+            </span>
+        </div>
+        <div class="middle">
+            <div id="video_containar">
+                <iframe frameborder="0" src="https://www.youtube.com/embed/60SRAWmMXyc"></iframe>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="https://www.youtube.com/@thesheryianscodingschool" target="_blank" class="btnbtn-primaryshadow-bottomshadow-primary">
+            Explore free learning
+          </a>
+        </div>
+        <br>
+        <br>
+        <br>
+    </section>
+    
+    <br>
+    <div>
+        <h1 id="cours">Courses Offered.</h1>
+    </div>
+    <div class="containerr">
+        {% for course in courses %}
+        <div class="boxx">
+            <div>
+                <img src="{{ course.image.url }}" alt="{{ course.title }}" class="prkkk">
+                <div class="couses_body">
+                    <div class="top">
+                        <h2>{{ course.title }}</h2>
+                    </div>
+                    <div class="tgs">
+                        <p>{{ course.language }}</p>
+                    </div>
+                    <div class="botttom">
+                        <div class="leftt">
+                            <span>Limited Time Discount</span>
+                            <div class="seven">
+                                <p>$ {{ course.discount_price }}</p>
+                                <p class="one">$ {{ course.original_price }}</p>
+                                <p class="six">{{ course.get_discount_percentage }}% OFF</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        {% empty %}
+        <p>No courses available at the moment.</p>
+        
+        {% endfor %}
+    </div>
+    
+    <br>
+    
+    <div class="containerr">
+        <div class="boxxx">View Details</div>
+        <div class="boxxx">View Details</div>
+        <div class="boxxx">View Details</div>
+      </div>
+    <br>
+    
+    
+    <br><br>
+
+
+    <div id="last">
+        <h1>
+            <span id="topp">Top <span class="text-highlight">companies</span> our students working with
+        </span>
+        </h1>
+    </div>
+
+    <br><br>
+    <div id="compani">
+        <img src="../static/companies_logos.webp" alt="" class="compani" >
+    </div>
+    <br>
+    <div class="red"></div>
+    <br>
+    <button id="cou">Explore Courses</button>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+{% endblock body %}
+
+

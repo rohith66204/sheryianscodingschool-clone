@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <style>
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .popup {
+            background: #1c1c1c;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0px 0px 10px rgba(0, 255, 100, 0.5);
+            position: relative;
+            text-align: left;
+        }
+
+        .popup h2 {
+            margin: 0 0 10px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .popup p {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #aaa;
+        }
+        
+        .popup input, .popup select {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: none;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+            font-size: 14px;
+            align-items: center;
+        }
+
+        .popup input::placeholder {
+            color: #bbb;
+        }
+        
+        .popup button {
+            width: 10%;
+            padding: 10px;
+            background-color: #00ff88;
+            border: none;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 16px;
+            transition: background 0.2s;
+        }
+        
+        .popup button:hover {
+            background-color: #00cc66;
+        }
+
+        /* Smaller Close Button */
+        .close-btn {
+            /* width: 10px; */
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: none;
+            /* color: white; */
+            font-size: 12px;  /* Smaller font */
+            padding: 4px;  /* Less padding */
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .close-btn:hover {
+            color: #00ff88;
+        }
+
+        /* Request Callback Button */
+        .trigger-btn {
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+            outline:none;
+            background: none;
+            color: white;
+        }
+
+        
+    
+    </style>
+
+    {% block css %}
+
+    {% endblock css %}
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    
+    
+</head>
+<body>
+    <nav id="nav_bar">
+        <a href=""></a>
+        <img src="{% static 'logo.webp'%}" id="logo">
+        <a href="{% url 'myapp1:home' %}" id="Sheryians_coding_school">Sheryians coding school</a>
+        <a href="{% url 'myapp1:home' %}">Home</a>
+        <a href="{% url 'myapp1:courses' %}">Courses</a>
+        <a href="{% url 'myapp1:bootcamp' %}">Bootcamp(Kodr)</a>
+        <a ><button class="trigger-btn" onclick="openPopup()">Request Callback</button>
+
+            <!-- Popup Modal -->
+            <div class="popup-container" id="popup-container">
+                <div class="popup">
+                    <button class="close-btn" onclick="closePopup()">✖</button>
+                    <h2>Request a Callback</h2>
+                    <p>Fill the form below to request a callback.</p>
+                    <input type="text" placeholder="Name" required>
+                    <input type="tel" placeholder="📞 Phone" required>
+                    <input type="datetime-local" required>
+                    <select>
+                        <option>Online Courses (Website)</option>
+                        <option>Technical Support</option>
+                        <option>General Inquiry</option>
+                    </select>
+                    <button>Submit</button>
+                </div>
+            </div>
+        
+            <script>
+                function openPopup() {
+                    document.getElementById("popup-container").style.display = "flex";
+                }
+        
+                function closePopup() {
+                    document.getElementById("popup-container").style.display = "none";
+                }
+            </script></a>
+        <a href="{% url 'myapp1:signin' %}" id="signin" class="signin">Sign In</a>
+    </nav>
+    <!-- <h1>This is Home Page</h1> -->
+    {% block body %}
+
+    {% endblock body %}
+    <br>
+    <footer>
+        <div>
+            
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,205 @@
+@font-face {
+    font-family: NeueMachina;
+    src: url(../static/NeueMachina/NeueMachina-Regular.otf);
+}
+
+@font-face {
+    font-family: helvetica;
+    src: url(../static/helvetica/HelveticaCondensedRegular.ttf);
+}
+
+@font-face {
+    font-family: juana;
+    src: url(../static/juana/1.otf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+img{
+    max-width: 73%;
+    margin-left: 15%;
+    align-items: center;
+}
+.subheading{
+    font-size: 50px;
+    font-family: helvetica;
+    font-size: 80px;
+    text-align: center;
+    margin-top: -30px;
+}
+.page3{
+    position: relative;
+    width: 1445px;
+    height: 1050px;
+}
+.backgroundimg{
+    position: absolute;
+    width: 1301px;
+    object-fit: cover;
+}
+.img1{
+    position: relative;
+    top: 100px;
+}
+
+.heading{
+    font-size: 10em;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 300px;
+    font-family: helvetica;
+
+}
+.subheadingg{
+    font-size: 4em;
+    margin-left: 300px;
+    font-family: helvetica;
+    font-weight: 600;
+    color: #27272ab0;
+}
+
+.buy{
+    width: 300px;
+    height: 50px;
+    background-color:#009560;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: 300;
+    font-family: Helvetica ;
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+    /* margin-top: 50px; */
+}
+.custom-line {
+    width: 80%;   /* Adjust width */
+    height: 2px;  /* Line thickness */
+    background: #343535; /* Line color */
+    margin: 20px auto;  /* Center alignment */
+}
+.page5 .top{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 1.9em 15em;
+    /* margin-bottom: 150px; */
+    margin-top: 100px;
+}
+.page5 .top h1{
+    font-weight: 600;
+    font-size: 2.4em;
+}
+.page5 .topp{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 1.9em 15em;
+    /* margin-bottom: 150px; */
+    margin-top: 40px;
+}
+.page5 .topp h1{
+    font-weight: 600;
+    font-size: 2.4em;
+}
+.page5 .to{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 1.9em 15em;
+    /* margin-bottom: 150px; */
+    margin-top: 40px;
+}
+.page5 .to h1{
+    font-weight: 600;
+    font-size: 2.4em;
+}
+
+.page7 .text .subheading{
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 1.9rem;
+    line-height: 1.5em;
+    margin-left: 300px;
+    text-align: left;
+}
+.page7 .text .subheading span{
+    color: #02e797;
+}
+.text small{
+    margin-left: 300px;
+}
+.Scratch small{
+    font-weight: 100;
+    font-size: 1.7rem;
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-bottom: 0.7rem;
+    display: block;
+}
+.Scratch .coupan{
+    height: 20rem;
+    width: 35rem;
+    max-width: 85vw;
+    overflow: hidden;
+    background-image: url(../static/downloadd.svg);
+    margin-left: 300px;
+}
+.Scratch .coupan .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.Scratch .coupan .container{
+    font-size: 4em;
+}
+.page7 .Startlearning{
+    margin-top: 50px;
+    margin-left: 300px;
+    width: 270px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #009560;
+    font-size: 20px;
+}
+
+.page8 .text h1{
+    font-size: 4rem;
+}
+
+.page8 .text .faqs{
+    padding-top: 7rem;
+    margin-left: 300px;
+
+}
+.page8 .faqs .ifaqs{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    /* border-bottom: 3px solid #1e1e1e; */
+    margin-left: 200px;
+
+}
+.page8 .faqs .ifaqs h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+}
+.page8 .faqs .ifaqs p{
+    width: 80%;
+    font-size: 1.5rem;
+    color: #7c7c7c;
+}

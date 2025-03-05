@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block title %}
+Courses
+{% endblock title %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'courses.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'home.css' %}"> -->
+
+{% endblock css %}
+
+{% block body %}
+<br><br><br>
+<section class="view" id="view1">
+    <div>
+        <h1>
+            <span>
+                We're not a 
+                <span class="texthighlight">course <br>factory.</span>
+            </span>
+        </h1>
+        <p>
+            We focus on courses that really help.
+          </p>
+    </div>
+</section>
+<section class="view" id="view2">
+    <span>Courses which do work</span>
+</section>
+<section class="view" id="view3">
+    <div class="containerr">
+        {% for course in courses %}
+        <div class="boxx">
+            <div>
+                <img src="{{ course.image.url }}" alt="{{ course.title }}" class="prkkk">
+                <div class="couses_body">
+                    <div class="top">
+                        <h2>{{ course.title }}</h2>
+                    </div>
+                    <div class="tgs">
+                        <p class="tag">{{ course.language }}</p>
+                    </div>
+                    <div class="botttom">
+                        <div class="leftt">
+                            <span>Limited Time Discount</span>
+                            <div class="seven">
+                                <p>$ {{ course.discount_price }}</p>
+                                <p class="one">$ {{ course.original_price }}</p>
+                                <p class="six" id="six">{{ course.get_discount_percentage }}% OFF</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p>No courses available at the moment.</p>
+        {% endfor %}
+    </div>
+        
+    <br>
+    <div class="containerr">
+        <div class="boxxx">View Details</div>
+        <div class="boxxx">View Details</div>
+        <div class="boxxx">View Details</div>
+      </div>
+</section>
+{% endblock body %}
